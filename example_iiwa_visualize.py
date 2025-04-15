@@ -7,7 +7,7 @@
 #        /opt/drake/bin for the default Ubuntu installation
 # STEP3: python example_iiwa_visualize.py 
 #
-from pydrake.manipulation.simple_ui import JointSliders
+from pydrake.multibody.meshcat import JointSliders
 from pydrake.systems.framework import ( DiagramBuilder, LeafSystem,
                          BasicVector, PublishEvent, TriggerType)
 from pydrake.systems.analysis import Simulator
@@ -16,10 +16,9 @@ from iiwa_manipulation_station import IiwaManipulationStation
 import numpy as np
 import matplotlib.pyplot as plt
 from pydrake.systems.drawing import plot_system_graphviz, plot_graphviz
-from pydrake.manipulation.planner import (
+from pydrake.multibody.inverse_kinematics import (
     DifferentialInverseKinematicsParameters)
-from pydrake.geometry import ConnectDrakeVisualizer, SceneGraph,DrakeVisualizer
-from pydrake.systems.meshcat_visualizer import MeshcatVisualizer
+from pydrake.geometry import SceneGraph,DrakeVisualizer, MeshcatVisualizer
 from pydrake.systems.planar_scenegraph_visualizer import (
     PlanarSceneGraphVisualizer
 )

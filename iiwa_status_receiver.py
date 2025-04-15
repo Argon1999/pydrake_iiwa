@@ -1,6 +1,7 @@
 #A system to parse the IIWA status into various data
-from pydrake.systems.all import(AbstractValue,TriggerType,LeafSystem, 
+from pydrake.systems.all import(TriggerType,LeafSystem, 
     PortDataType, BasicVector,PublishEvent)
+from pydrake.common.value import AbstractValue
 
 #import the LCM message definition
 from drake import lcmt_iiwa_status

@@ -3,7 +3,8 @@
 from pydrake.systems.framework import Diagram,DiagramBuilder
 from pydrake.lcm import DrakeLcm
 from pydrake.all import MultibodyPlant, Parser,FindResourceOrThrow
-from pydrake.systems.all import LcmSubscriberSystem, LcmInterfaceSystem, LcmPublisherSystem,  AbstractValue
+from pydrake.systems.all import LcmSubscriberSystem, LcmInterfaceSystem, LcmPublisherSystem
+from pydrake.common.value import AbstractValue
 
 from drake import lcmt_iiwa_status, lcmt_iiwa_command
 

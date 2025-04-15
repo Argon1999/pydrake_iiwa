@@ -1,5 +1,6 @@
 from pydrake.lcm import DrakeLcm
-from pydrake.systems.all import LcmSubscriberSystem, LcmInterfaceSystem,AbstractValue
+from pydrake.systems.all import LcmSubscriberSystem, LcmInterfaceSystem
+from pydrake.common.value import AbstractValue
 
 from drake import lcmt_iiwa_status
 from pydrake.systems.framework import DiagramBuilder

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #Control the kuka iiwa joints through sliders
-from pydrake.manipulation.simple_ui import JointSliders
+from pydrake.multibody.meshcat import JointSliders
 from pydrake.systems.framework import DiagramBuilder
 from pydrake.systems.analysis import Simulator
 from pydrake.systems.primitives import FirstOrderLowPassFilter
